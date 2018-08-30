@@ -5,6 +5,7 @@ tar -xvzf cs-studio-ess-4.6.1.7-linux.gtk.x86_64.tar.gz
 rm cs-studio-ess-4.6.1.7-linux.gtk.x86_64.tar.gz
 sed -i -e '26cFULL = .* ' cs-studio/configuration/authorization.conf
 sed -i -e '21calarm_config =' cs-studio/configuration/authorization.conf
+sed -i -e '26iFULL=.* ' cs-studio/configuration/authorization.conf
 sed -i -e '145corg.csstudio.security/authorization_provider=FileBased' cs-studio/configuration/plugin_customization.ini
 sed -i -e '146corg.csstudio.security/authorization_file_name=platform:/config/authorization.conf' cs-studio/configuration/plugin_customization.ini
 sed -i -e '40corg.csstudio.diirt.util.core.preferences/diirt.ca.addr.list=10.0.6.57' cs-studio/configuration/plugin_customization.ini
