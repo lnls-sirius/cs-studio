@@ -1,0 +1,7 @@
+#!/bin/bash
+
+RETRIEVAL="10.0.6.57:11998/retrieval"
+JMS="10.0.6.57:61616"
+SMTP="10.0.6.48:25"
+POSTGRE="10.0.6.57:5432/lnls_alarms"
+CA_ADDR_LIST_IP="10.0.6.57"
