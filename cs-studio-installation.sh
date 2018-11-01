@@ -5,7 +5,7 @@ wget https://artifactory.esss.lu.se/artifactory/CS-Studio/production/4.6.1.7/cs-
 tar -xvzf cs-studio-ess-4.6.1.7-linux.gtk.x86_64.tar.gz
 rm cs-studio-ess-4.6.1.7-linux.gtk.x86_64.tar.gz
 sed -i -e '26cFULL = .* ' cs-studio/configuration/authorization.conf
-sed -i -e '21calarm_config =' cs-studio/configuration/authorization.conf
+sed -i -e '21calarm_config = .*' cs-studio/configuration/authorization.conf
 sed -i -e '26iFULL=.* ' cs-studio/configuration/authorization.conf
 
 sed -i -e '145corg.csstudio.security/authorization_provider=FileBased' cs-studio/configuration/plugin_customization.ini
